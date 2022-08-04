@@ -99,3 +99,16 @@ The diagram below shows a reference implementation created by [NYMLAB](https://w
 * A mobile identity wallet, controlling the smart contract wallet
 * A set of Trusted Issuers, with the capacity to issue verifiable credentials for legal and regulatory compliance
 
+### KYC’d Token holder
+
+Assumption: an address can receive/send a specific token if and only if that address is included in a whitelist (see: [trusted token design pattern](/images/trusted-crypto-asset-scheme.svg)).
+In this specific case, in order to be added to the whitelist, the address owner needs to go through a KYC/AML verification process.
+The solution provides an architectural design pattern, scalable, decentralised and compliant with established identity proofing and officially acknowledged authentication methods.
+* Gayadeed (as one of the many possible trusted issuers) certifies the link between the holder identity, Vectis mobile wallet and Vectis proxy wallet
+* Gayadeed verifies owner eligibility (KYC verification) and issues one or more credentials
+* Vectis mobile wallet (as one of the many possible SSI & crypto mobile user agents) can receive credentials and derive proofs, at the minimum using selective disclosure
+* Vectis proxy wallet can be used as a storage of proofs and proofs can be shared/checked by third party (on-chain and off-chain)
+* Proofs must include only pseudonymous data (i.e. credential serial numbers, proof of inclusion of an issuer in a trusted issuer list - for instance, via a merkle path, credential schema unique identifier, etc.)\
+Such process would allow a Trusted Circle to add an account, checking all the requirements of the account holder, without any disclosure of personal data.
+
+
