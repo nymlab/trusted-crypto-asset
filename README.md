@@ -84,7 +84,18 @@ The diagram below represents the general perspective of a decentralised trust ne
 * Mandatory (case specific): In case of revocation of the verifiable credentials, the proof must be invalidated
 * Mandatory: In case the proof is invalidated and the holder owns trusted crypto asset, those asset should become frozen. Invalidated proof does not imply losing control of the wallet: there could be use cases where the user, with their local account, is still in control of their proxy wallet, but the credential expires (when validity period apply, such in case as licenses, certifications etc.) and so the proof is invalidated. In this case, the holder will still be able to manage untrusted crypto asset only
 
-## Reference Implementations
-A practical implementations of a Trusted Crypto Asset framework
+## Reference Implementation
+A practical implementations of a Trusted Crypto Asset framework.
 
+The diagram below shows a reference implementation created by [NYMLAB](https://www.nymlab.it/#/), where Gayadeed is a trusted credentials issuer, that performs KYC and AML validation and [Vectis](https://github.com/nymlab/vectis) is a mobile wallet, smart contract wallet and factory smart contract open source project that is responsible for storing credentials, deriving proofs, DID storage, key management and more.
+
+![image](images/implementation.svg)
+
+### Environmental Components
+
+* Crypto assets that comply with regulatory requirements regarding their holders (e.g. KYC and AML verification for stable coin holders; proof of registration for regulated broker dealing with specific crypto asset classes)
+* DAOs [aka Trusted Circles], where fully-regulated tokens can be exchanged among addresses presenting verifiable privacy-protecting proofs
+* A smart contract wallet architecture, providing social recovery, storage, etc
+* A mobile identity wallet, controlling the smart contract wallet
+* A set of Trusted Issuers, with the capacity to issue verifiable credentials for legal and regulatory compliance
 
