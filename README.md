@@ -1,7 +1,7 @@
 # Trusted crypto asset
 
 A trust framework powering regulated crypto assets\
-By: [NYMLAB](https://www.nymlab.it/#/)\
+By: [Egidio Casati](mailto:egidio.casati@nymlab.it); [NYMLAB](https://www.nymlab.it/#/)\
 Date: July 2022
 
 ## Overview
@@ -28,7 +28,7 @@ In order to originate a regulated token that can fully leverage on the technolog
 To be considered regulated, a Crypto Asset needs to satisfy regulatory constraints regarding their holders. 
 These constraints may vary on the basis of the Crypto Asset specific nature, but we assume that a set of minimal requirements should be met, like proving that the holder has successfully carried out KYC and AML checks with an ascertainable trusted third party ([trusted issuer](/README.md#trusted-issuers)).
 Decentralised identity and SSI protocols allow us to tread a narrow path that combines the user's right to privacy/anonymity with the possibility of on-chain verification that they have successfully, and without revocation, passed via KYC and AML checks.
-Furthermore, EU is on the verge of new rules (eIDAS2) and technical standards (ETSI) regarding the user wallets; in this regard, SSI provides us with the chance to inject in the transaction itself all the proofs needed to continuously validate the wallet compliance.
+Furthermore, EU is on the verge of new rules ([eIDAS2](https://digital-strategy.ec.europa.eu/en/policies/eidas-regulation)) and technical standards ([ETSI](https://www.etsi.org/)) regarding the user wallets; in this regard, SSI provides us with the chance to inject in the transaction itself all the proofs needed to continuously validate the wallet compliance.
 Finally, an important client-side technical requirement is the binding between the holder and the verifiable credential stored on the wallet; currently, this feature may be achieved through the adoption of anonymous credential technology.
 
 ### Network
