@@ -18,7 +18,7 @@ Below is a diagram that outlines the key components of a proposed design pattern
 In order to originate a regulated token that can fully leverage on the technological innovation of “trustless” peer to peer transactions executed in a public decentralised network:
 
 * The legal entity originating the crypto asset must comply with regulatory licensing, risk and capital reserve requirements
-* The token logic must be consistent with the smart contract based standards for fungible, non fungible and composite token structures (i.e. 20, 721, 1155)
+* The token logic must be consistent with the smart contract based standards for fungible, non fungible and composite token structures (i.e. [20](https://docs.openzeppelin.com/contracts/3.x/erc20), [721](https://docs.openzeppelin.com/contracts/3.x/erc721), [1155](https://docs.openzeppelin.com/contracts/3.x/erc1155))
 * The minters of stable coins must provide real-time third party auditing of fiat reserves  
 * Policies and procedures regarding the management of fraud-prevention, AML risk on suspected accounts (freeze/unfreeze of funds) must be in place
 * A continuous IT security auditing of the mint/burn infrastructure must be assured
@@ -79,6 +79,6 @@ The diagram below represents the general perspective of a decentralised trust ne
 * Mandatory: Verifiable Proof must not disclose any PII of the User, apart from pseudonyms information
 * Mandatory: Verifiable Proof must prove:
     - The User has received a (set of) Verifiable Credential(s) of a specific type (credential schema)
-    - The User has received the (set of) Verifiable Credential(s) from one (or more) Issuer(s) included in a list of Trusted Issuers and only eligible third parties should be able to look up the real Issuer public DID
+    - The User has received the (set of) Verifiable Credential(s) from one (or more) Issuer(s) included in a list of Trusted Issuers and only eligible third parties should be able to look up the real Issuer public [DID](https://www.w3.org/TR/did-core/#dfn-decentralized-identifiers)
 * Mandatory: Any third party must be able to check for revocation of the Verifiable Credentials from which the Proof has been derived
 
