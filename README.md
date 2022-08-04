@@ -81,4 +81,10 @@ The diagram below represents the general perspective of a decentralised trust ne
     - The User has received a (set of) Verifiable Credential(s) of a specific type (credential schema)
     - The User has received the (set of) Verifiable Credential(s) from one (or more) Issuer(s) included in a list of Trusted Issuers and only eligible third parties should be able to look up the real Issuer public [DID](https://www.w3.org/TR/did-core/#dfn-decentralized-identifiers)
 * Mandatory: Any third party must be able to check for revocation of the Verifiable Credentials from which the Proof has been derived
+* Mandatory (case specific): In case of revocation of the verifiable credentials, the proof must be invalidated
+* Mandatory: In case the proof is invalidated and the holder owns trusted crypto asset, those asset should become frozen. Invalidated proof does not imply losing control of the wallet: there could be use cases where the user, with their local account, is still in control of their proxy wallet, but the credential expires (when validity period apply, such in case as licenses, certifications etc.) and so the proof is invalidated. In this case, the holder will still be able to manage untrusted crypto asset only
+
+## Reference Implementations
+A practical implementations of a Trusted Crypto Asset framework
+
 
