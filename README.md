@@ -8,7 +8,7 @@ Date: July 2022
 
 Below is a diagram that outlines the key components of a proposed design pattern for creation and sustainability of regulated crypto assets. By using the power of decentralisation and combining it with auditing, verification and well defined rules we aim to utilise the best of both worlds and provide an accountable, accessible and secure regulated crypto asset ecosystem.
 
-![Trusted Crypto Asset Scheme](https://user-images.githubusercontent.com/96119806/182612857-9eeb91b0-bbfb-4156-9a76-385f53ad00bb.svg)
+![image](images/trusted-crypto-asset-scheme.svg)
 
 
 ## Roles
@@ -70,7 +70,7 @@ In concrete, the procedure should be based on a set of standardized technical ev
 
 The diagram below represents the general perspective of a decentralised trust network that we believe is necessary for a crypto asset to be regulated, and it summarises the relations existing among all components.
 
-![LegalArchitecture](https://user-images.githubusercontent.com/96119806/182809904-c5b38f42-38dc-4df5-87ca-73fb545deca3.svg)
+![image](images/legal-architecture.svg)
 
 ## Requirements
 
