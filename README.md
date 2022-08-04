@@ -6,7 +6,7 @@ Date: July 2022
 
 ## Overview
 
-Below is a diagram that outlines the key components of a proposed design pattern for creation and sustainability of regulated crypto assets.
+Below is a diagram that outlines the key components of a proposed design pattern for creation and sustainability of regulated crypto assets. By using the power of decentralisation and combining it with auditing, verification and well defined rules we aim to utilise the best of both worlds and provide an accountable, accessible and secure regulated crypto asset ecosystem.
 
 ![Trusted Crypto Asset Scheme](https://user-images.githubusercontent.com/96119806/182612857-9eeb91b0-bbfb-4156-9a76-385f53ad00bb.svg)
 
@@ -15,26 +15,25 @@ Below is a diagram that outlines the key components of a proposed design pattern
 
 ### Originator
 
-In order to originate a regulated token that can fully leverage on the technological innovation of “trustless” peer to peer transactions executed in a public decentralised network
+In order to originate a regulated token that can fully leverage on the technological innovation of “trustless” peer to peer transactions executed in a public decentralised network:
 
 * the legal entity originating the crypto asset must comply with regulatory licensing, risk and capital reserve requirements
 * the token logic must be consistent with the smart contract based standards for fungible, non fungible and composite token structures (i.e. 20, 721, 1155)
 * the minters of stable coins must provide real-time third party auditing of fiat reserves  
-* policies and procedures regarding the management of fraud-prevention, AML risk on suspected accounts (freeze / unfreeze of funds) must be in place
+* policies and procedures regarding the management of fraud-prevention, AML risk on suspected accounts (freeze/unfreeze of funds) must be in place
 * a continuous IT security auditing of the mint/burn infrastructure must be assured
 
 ### Holder
 
 To be considered regulated, a Crypto Asset needs to satisfy regulatory constraints regarding their holders. 
-These constraints may vary on the basis of the Crypto Asset specific nature, but we assume that a set of minimal requirements should be met, like proving that the holder has successfully carried out KYC and AML checks with an ascertainable trusted third party.
-Decentralised identity and SSI protocols allow us to tread a narrow path that combines the user's right to privacy/anonymity with the possibility of on-chain verification that he or she has successfully, and without revocation, passed KYC and AML checks.
-Further on, EU is on the verge of new rules (eIDAS2) and technical standards (ETSI) regarding the user wallets; in this regard, SSI provides us with the chance to inject in the transaction itself all the proofs needed to continuously validate the wallet compliance.
-Finally one important client-side technical requirement is the binding between the holder and the verifiable credential stored in the wallet; currently, this feature may be achieved through the adoption of anonymous credential technology.
+These constraints may vary on the basis of the Crypto Asset specific nature, but we assume that a set of minimal requirements should be met, like proving that the holder has successfully carried out KYC and AML checks with an ascertainable trusted third party ([trusted issuer](/README.md#trusted-issuers)).
+Decentralised identity and SSI protocols allow us to tread a narrow path that combines the user's right to privacy/anonymity with the possibility of on-chain verification that they have successfully, and without revocation, passed via KYC and AML checks.
+Furthermore, EU is on the verge of new rules (eIDAS2) and technical standards (ETSI) regarding the user wallets; in this regard, SSI provides us with the chance to inject in the transaction itself all the proofs needed to continuously validate the wallet compliance.
+Finally, an important client-side technical requirement is the binding between the holder and the verifiable credential stored on the wallet; currently, this feature may be achieved through the adoption of anonymous credential technology.
 
 ### Network
 
-A sustainable proof of stake network, that provides token holders with the possibility to delegate their tokens and contribute to the network’s TVL in exchange of an APR, needs to comply with a number of regulatory constraints
-Know your validator 
+A sustainable proof of stake network, that provides token holders with the possibility to delegate their tokens and contribute to the network’s TVL in exchange of an APR, needs to comply with a number of regulatory constraints, Know Your Validator (KYV):
 
 * a crypto asset holder who decides to delegate value to a specific validator must reach an established level of assurance and accountability threshold 
 * the mass adoption of decentralised technologies does not eliminate the need to protect the investor [token holder] willing to invest [stake] their crypto value with a validator
