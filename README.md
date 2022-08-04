@@ -6,7 +6,7 @@ Date: July 2022
 
 ## Overview
 
-Below is a diagram that outlines the key components of a proposed design pattern for creation and sustainability of regulated crypto assets. By using the power of decentralisation and combining it with auditing, verification and well defined rules we aim to utilise the best of both worlds and provide an accountable, accessible and secure regulated crypto asset ecosystem.
+Below is a diagram that outlines the key components of a proposed design pattern for creation and sustainability of regulated crypto assets. By using the power of decentralisation and combining it with auditing, verification and well defined rules we aim to utilise the best of both worlds and provide a framework for building an accountable, accessible and secure regulated crypto asset ecosystem.
 
 ![image](images/trusted-crypto-asset-scheme.svg)
 
