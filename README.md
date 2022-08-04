@@ -1,7 +1,7 @@
 # Trusted crypto asset
 
 A trust framework powering regulated crypto assets\
-By: NYMLAB\
+By: [NYMLAB](https://www.nymlab.it/#/)\
 Date: July 2022
 
 ## Overview
