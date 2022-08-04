@@ -109,6 +109,7 @@ The solution provides an architectural design pattern, scalable, decentralised a
 * Vectis mobile wallet (as one of the many possible SSI & crypto mobile user agents) can receive credentials and derive proofs, at the minimum using selective disclosure
 * Vectis proxy wallet can be used as a storage of proofs and proofs can be shared/checked by third party (on-chain and off-chain)
 * Proofs must include only pseudonymous data (i.e. credential serial numbers, proof of inclusion of an issuer in a trusted issuer list - for instance, via a merkle path, credential schema unique identifier, etc.)\
+
 Such process would allow a Trusted Circle to add an account, checking all the requirements of the account holder, without any disclosure of personal data.
 
 
