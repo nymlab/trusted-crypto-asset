@@ -5,7 +5,7 @@ By: [Belsy Yuen](mailto:belsy@nymlab.it), [Elena Chachkarova](elena@nymlab.it), 
 
 license: CC-BY
 
-Official repo: https://github.com/nymlab/trusted-crypto-asset: 
+Official repo: https://github.com/nymlab/trusted-crypto-asset:
 
 Date: Aug 2022
 
@@ -20,7 +20,7 @@ The first section of the document focuses on the legal and organisational aspect
 
 Below is a diagram that outlines the key components of a proposed design pattern for the creation and sustainability of regulated crypto assets. We use the inclusive and risk-mitigating power of decentralisation and combine it with real-time auditing verification and a well-defined set of rules to provide a framework for an accountable, accessible and securely regulated crypto asset ecosystem.
 
-![image](images/overview.png)
+![image](media/tca_overview.png)
 
 
 ### Roles
@@ -37,7 +37,7 @@ To originate a regulated token that can fully leverage on the technological inno
 
 #### Holder
 
-To be considered regulated, a crypto asset needs to satisfy regulatory requirements regarding its holders. 
+To be considered regulated, a crypto asset needs to satisfy regulatory requirements regarding its holders.
 These requirements may vary on the basis of the crypto asset specific purpose, however, trusted crypto assets imply that  a set of minimal requirements are met, like proving that the holder has successfully carried out KYC and AML checks with an ascertainable trusted third party ([trusted issuer](/README.md#trusted-issuers)).
 Decentralised identity and SSI protocols allow us to tread a narrow path that combines the user's right to privacy/anonymity with the possibility of on-chain verification that they have successfully, and without revocation, passed KYC and AML checks.
 Furthermore, the EU is on the verge of issuing the new rules ([eIDAS2](https://digital-strategy.ec.europa.eu/en/policies/eidas-regulation)) and technical standards (mainly provided by [ETSI](https://www.etsi.org/)) regarding the so-called Identity wallets; in this regard, SSI provides us with the chance to inject in the transaction itself all the needed proofs, allowing for continuous validation of the personal wallet compliance.
@@ -45,7 +45,7 @@ Finally, an important client-side technical requirement is the binding between t
 
 #### Network
 
-A sustainable proof of stake network, that provides token holders with the possibility to delegate their tokens and contribute to the network’s TVL in exchange for an APR, needs to comply with a number of regulatory constraints. 
+A sustainable proof of stake network, that provides token holders with the possibility to delegate their tokens and contribute to the network’s TVL in exchange for an APR, needs to comply with a number of regulatory constraints.
 
 Know Your Validator (KYV):
 
@@ -57,11 +57,11 @@ Know Your Validator (KYV):
 
 #### Trusted Issuers
 
-Trusted Issuers of [verifiable credentials](https://www.w3.org/TR/vc-data-model/#what-is-a-verifiable-credential) (VC) are instrumental to a decentralised trust framework. 
+Trusted Issuers of [verifiable credentials](https://www.w3.org/TR/vc-data-model/#what-is-a-verifiable-credential) (VC) are instrumental to a decentralised trust framework.
 Trusted Issuers define a decentralised trust framework:
 
 * It is up to the network participating community ([DAO](https://www.investopedia.com/tech/what-dao/)) to establish and maintain the principles [requirements and constraints] regarding the trustability of assertions [VCs and proofs] based on the ascertainability of their Trusted Issuers
-* The set of Trusted Issuers can be generally defined [eIDAS Trust Service Provider List] or locally specified, eventually inheriting the general available entities and integrating the set with specific third parties 
+* The set of Trusted Issuers can be generally defined [eIDAS Trust Service Provider List] or locally specified, eventually inheriting the general available entities and integrating the set with specific third parties
 * Most importantly, the shift from a federated identity schemas ([SAML](https://www.cloudflare.com/en-gb/learning/access-management/what-is-saml/), [Oauth2](https://oauth.net/2/) and [OIDC](https://openid.net/connect/)) where synchronous interaction with the identity provider is required to SSI allows for a full peer-to-peer interaction between the (credential) holder and the verifier
 
 #### Trusted [credential schemas and definitions](https://www.w3.org/TR/vc-data-model/#data-schemas)
@@ -87,7 +87,7 @@ In concrete, the procedure should be based on a set of standardized technical ev
 
 The diagram below represents the general perspective of a decentralised trust network that we believe is necessary for a crypto asset to be regulated, and it summarises the relations existing among all components.
 
-<img src="images/legal_architecture.png" alt="image" style="zoom: 33%;" />
+<img src="media/tca_legal_architecture.png" alt="image" style="zoom: 33%;" />
 
 
 
@@ -112,7 +112,7 @@ The diagram below shows a reference architecture for the TCA, specifically for a
 
 We also recommend the use of a particular type of wallet, based on a proxy smart contract, providing features like guardianship for key rotation and transaction relayer. An example of such type of wallet is the opensource project [VectisDAO](https://github.com/nymlab/vectis).
 
-![image](images/technical_architecture.png)
+![image](media/tca_technical_architecture.png)
 
 #### Environmental Components
 
@@ -133,7 +133,7 @@ This two objects shall be produced by an edge agent (e.g. a mobile wallet contro
 
 The relayer, which is Appchain specific, shall route :
 
-- the signed transfer payload to the proxy wallet, in order to be executed by the TCA contract, and 
+- the signed transfer payload to the proxy wallet, in order to be executed by the TCA contract, and
 - the proof to the vc-verifier contract
 
 Before committing the new state, the trusted crypto asset contract will query the vc-verifier contract if there is a valid proof for the hash(nonce).
@@ -150,11 +150,8 @@ Assuming we have a sender and a receiver, the validation strategy of a transfer 
 ## Conclusions and next steps
 
 This document stems from the convergence of a number of elements:
-- our vision with respect to the growing emergence of public and decentralised networks 
+- our vision with respect to the growing emergence of public and decentralised networks
 - the need to guarantee an adequate level of user experience and protection for the mass adoption of these technologies
 - the inevitable action of the regulators of such technologies to protect users
 
 At the moment, we can only speculate on the trajectory that regulation will take with respect to public and decentralised networks, hypotheses from which this proposal was born, and which will be gradually updated to take account of forthcoming regulatory changes.
-
-
-
