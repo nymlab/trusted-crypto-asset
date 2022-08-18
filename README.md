@@ -1,4 +1,4 @@
-# Trusted crypto asset
+# Trusted Crypto Asset
 
 A trust framework powering regulated crypto assets\
 By: [Belsy Yuen](mailto:belsy@nymlab.it), [Elena Chachkarova](elena@nymlab.it), [Egidio Casati](mailto:egidio.casati@nymlab.it) for [NYMLAB srl](https://www.nymlab.it)
@@ -11,7 +11,7 @@ Date: Aug 2022
 
 ## Abstract
 
-This document outlines the legal, organisational and tecnical characteristics of a framework that allows issuers and holders to manage Trusted Crypto Assets in the context of a permissioned public decentralised network, leveraging on SSI protocols.. We define a "Trusted Crypto Asset" as  a particular asset class that intend to anticipate and satisfy regulatory requirements regarding the asset issuers, the network where they are minted and their holders.
+This document outlines the legal, organisational and tecnical characteristics of a framework that allows issuers and holders to manage Trusted Crypto Assets (TCA) in the context of a permissioned public decentralised network, leveraging on SSI protocols.. We define a "Trusted Crypto Asset" as  a particular asset class that intend to anticipate and satisfy regulatory requirements regarding the asset issuers, the network where they are minted and their holders.
 
 The first section of the document focuses on the legal and organisational aspects of the framework, describing roles and requirements of the main actors and providing a legal architecture overview  while the second part offers the technical framework overview.
 
@@ -86,6 +86,8 @@ The diagram below represents the general perspective of a decentralised trust ne
 
 <img src="images/legal_architecture.png" alt="image" style="zoom: 33%;" />
 
+
+
 ## TCA Technical overview
 
 In this section we focus on describing the technical aspects of the TCA framework,describing a set of minimal requirements that the solution must fulfill and defining a candidate architecture.
@@ -135,14 +137,21 @@ Before committing the new state, the trusted crypto asset contract shall query t
 
 In this scenario, the business logic for the validation is mainly n charge of the vc-verifier contractl leaving to the trusted crypto asset issuer a minimum impact in terms of validation.
 
-#### Transaction Validation strategies
+#### Transaction Execution strategies
 assuming we have a sender and a receiver, the validation strategy of a transfer of TCA from sender to receiver may be implemented in at least two different way:
 - validation of the sender: in this case, only the sender is required to provide a verifiable prooof at time of transfer, and no validation is applier to the receiver. The receiver won't' be able to spend their token unless their provide a verifiable proof.
 - validation of both sender and receiver: in this case, in order to validate both the subjects, the transaction is split in two sub transactions:
   - sender execute allowance in favour of receiver, up to a specific amount
   - receiver execute a claim
 
+## Conclusions and next steps
 
+This document stems from the convergence of a number of elements:
+- our vision with respect to the growing emergence of public and decentralised networks 
+- the need to guarantee an adequate level of user experience and protection for the mass adoption of these technologies
+- the inevitable action of the regulators of such technologies to protect users
+
+At the moment, we can only speculate on the trajectory that regulation will take with respect to public and decentralised networks, hypotheses from which this proposal was born, and which will be gradually updated to take account of forthcoming regulatory changes.
 
 
 
