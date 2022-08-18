@@ -18,7 +18,7 @@ The first section of the document focuses on the legal and organisational aspect
 
 ## TCA Legal and Organisational overview
 
-Below is a diagram that outlines the key components of a proposed design pattern for creation and sustainability of regulated crypto assets. By using the power of decentralisation and combining it with auditing, verification and well defined rules we aim to utilise the best of both worlds and provide a framework for building an accountable, accessible and secure regulated crypto asset ecosystem.
+Below is a diagram that outlines the key components of a proposed design pattern for the creation and sustainability of regulated crypto assets. We use the inclusive and risk-mitigating power of decentralisation and combine it with real-time auditing verification and a well-defined set of rules to provide a framework for an accountable, accessible and securely regulated crypto asset ecosystem.
 
 ![image](images/overview.png)
 
@@ -27,7 +27,7 @@ Below is a diagram that outlines the key components of a proposed design pattern
 
 #### Originator
 
-In order to originate a regulated token that can fully leverage on the technological innovation of “trustless” peer to peer transactions executed in a public decentralised network:
+To originate a regulated token that can fully leverage on the technological innovation of “trustless” peer to peer exchange of value executed in public decentralised networks:
 
 * The legal entity originating the crypto asset must comply with regulatory licensing, risk and capital reserve requirements
 * The token logic must be consistent with the smart contract based standards for fungible, non fungible and composite token structures (e.g. [20](https://docs.openzeppelin.com/contracts/3.x/erc20), [721](https://docs.openzeppelin.com/contracts/3.x/erc721), [1155](https://docs.openzeppelin.com/contracts/3.x/erc1155))
@@ -37,11 +37,11 @@ In order to originate a regulated token that can fully leverage on the technolog
 
 #### Holder
 
-To be considered regulated, a Crypto Asset needs to satisfy regulatory constraints regarding their holders. 
-These constraints may vary on the basis of the Crypto Asset specific nature, but we assume that a set of minimal requirements should be met, like proving that the holder has successfully carried out KYC and AML checks with an ascertainable trusted third party ([trusted issuer](/README.md#trusted-issuers)).
-Decentralised identity and SSI protocols allow us to tread a narrow path that combines the user's right to privacy/anonymity with the possibility of on-chain verification that they have successfully, and without revocation, passed via KYC and AML checks.
-Furthermore, EU is on the verge of new rules ([eIDAS2](https://digital-strategy.ec.europa.eu/en/policies/eidas-regulation)) and technical standards (mainly provided by [ETSI](https://www.etsi.org/)) regarding the so colled Identity wallets; in this regard, SSI provides us with the chance to inject in the transaction itself all the proofs needed to continuously validate the wallet compliance.
-Finally, an important client-side technical requirement is the binding between the holder and the verifiable credentials stored on the wallet; currently, this feature may be achieved through the adoption of anonymous credential technology.
+To be considered regulated, a Crypto Asset needs to satisfy regulatory requirements regarding their holders. 
+These requirements may vary on the basis of the Crypto Asset specific purpose, however, trusted crypto assets imply that  a set of minimal requirements are met, like proving that the holder has successfully carried out KYC and AML checks with an ascertainable trusted third party ([trusted issuer](/README.md#trusted-issuers)).
+Decentralised identity and SSI protocols allow us to tread a narrow path that combines the user's right to privacy/anonymity with the possibility of on-chain verification that they have successfully, and without revocation, passed KYC and AML checks.
+Furthermore, the EU is on the verge of issuing the new rules ([eIDAS2](https://digital-strategy.ec.europa.eu/en/policies/eidas-regulation)) and technical standards (mainly provided by [ETSI](https://www.etsi.org/)) regarding the so called Identity wallets; in this regard, SSI provides us with the chance to inject in the transaction itself all the needed proofs, allowing for continuous validation of the personal wallet compliance.
+Finally, an important client-side technical requirement is the binding between the holder and the verifiable credentials stored on the personal wallet; currently, this feature may be achieved through the adoption of anonymous credential technology.
 
 #### Network
 
@@ -49,9 +49,9 @@ A sustainable proof of stake network, that provides token holders with the possi
 
 Know Your Validator (KYV):
 
-* A crypto asset holder who decides to delegate value to a specific validator must reach an established level of assurance and accountability threshold 
+* A trusted crypto asset holder who decides to delegate value to a specific validator must be guaranteed by an established assurance and accountability threshold  
 * The mass adoption of decentralised technologies does not eliminate the need to protect the investor [token holder] willing to invest [stake] their crypto value with a validator
-* Standard investor protection rules require moving beyond the concept of a 'trustless' network in favour of an ‘accountable’ network, where the value at stake [TVL] cease to be the defining security metrics, rather, the continuous and transparent process of verification of valid legal requirements and operational soundness become the minimum guarantee threshold
+* Standard investor protection rules require moving beyond the concept of a 'trustless' network in favour of an ‘accountable’ network, where the value at stake [TVL] cease to be the defining security metrics, rather, the continuous and transparent process of verification of valid legal requirements and operational soundness become the minimum assurance threshold
 
 ### Utility components
 
@@ -59,22 +59,24 @@ Know Your Validator (KYV):
 
 Trusted Issuers of [Verifiable Credentials](https://www.w3.org/TR/vc-data-model/#what-is-a-verifiable-credential) (VC) are instrumental to a decentralised trust framework. 
 Trusted Issuers define a decentralised trust framework:
-* It is up to the network underlying community ([DAO](https://www.investopedia.com/tech/what-dao/)) to establish and maintain the principles [requirements and constraints] regarding the trustability of assertions [VCs and proofs] based on the ascertainability of their Trusted Issuers
+* It is up to the network participating community ([DAO](https://www.investopedia.com/tech/what-dao/)) to establish and maintain the principles [requirements and constraints] regarding the trustability of assertions [VCs and proofs] based on the ascertainability of their Trusted Issuers
 * The set of Trusted Issuers can be generally defined [eIDAS Trust Service Provider List] or locally specified, eventually inheriting the general available entities and integrating the set with specific third parties 
 * Most importantly, the shift from a federated identity schemas ([SAML](https://www.cloudflare.com/en-gb/learning/access-management/what-is-saml/), [Oauth2](https://oauth.net/2/) and [OIDC](https://openid.net/connect/)) where synchronous interaction with the identity provider is required to SSI allows for a full peer-to-peer interaction between the (credential) holder and the verifier
 
 #### Trusted [credential schemas and definitions](https://www.w3.org/TR/vc-data-model/#data-schemas)
 
-Once the set of issuers that may be considered trusted has been defined by a verifier, the issuer can derive a proof from one or more of those trusted issuer credentials. The other founding element of a decentralised trust framework is the type and template structure of the assertions that the issuers (and the verifiers) agree upon to reach full interoperability and completion of information.
-This can be achieve:
+Once the set of issuers that may be considered trusted has been defined by the verifier, the holder can derive and present a proof from one or more of those trusted issuer credentials. The other founding element of a decentralised trust framework is the type and template structure of the assertions that the issuers (and the verifiers) agree upon to reach full interoperability and completion of information.
+This can be achieved:
+
 * At Domain/Community/DAO level, where all the participant, through a voting mechanism achieve consensus around a specified list of credential schemas
 * At verifier level, where the single entity can decide to shape its own trusted set of credential, eventually integrating the community-based list
 
 #### Dispute resolution procedure
 
-The organisation of a community around a set of principles and tools sets the basis to elaborate strategies regarding accountability, liability of different roles (verifiers, holders, issuers, DAOs) and to help in defining dispute resolution strategies, as a pragmatic approach in the wait for a broaden regulation.
+The organisation of a participating community [DAO] around a set of principles and tools provides the backdrop for the incentives sustaining the accountability and liability threshold of different roles (verifiers, holders, issuers, DAOs) and helps defining pragmatic dispute resolution process ahead of comprehensive regulation.
 Initiatives like [identrust](https://www.identrust.com/) have demonstrated that this approach is feasible and may benefit the community, introducing the necessary legal components to support operations from a business standpoint.
-In concrete, the procedure should be based on a set of standardized technical evidences that the involved parties may bring on in a dispute, for instance:
+In concrete, the procedure should be based on a set of standardized technical evidences that the parties involved in a dispute can bring along, for instance:
+
 * Proof, as an issuer, to comply to the community established set of protocols for evaluating a holder request to issue a specific type of credentials
 * Issuer due diligence in case of credential revocation (proofs regarding the internal process to manage the revocation request, until publishing the revocation on-chain - for instance via crypto accumulator)
 * Proof as a holder, to be in sole control of the credentials (credential-holder binding in case of [anonymous cred](https://wiki.hyperledger.org/download/attachments/6426712/Anoncreds2.1.pdf))
@@ -114,7 +116,7 @@ We also recommend the use of a particular type of wallet, based n a proxy smart 
 #### Environmental Components
 
 * A crypto assets Issuer that complies with regulatory requirements regarding their holders (e.g. KYC and AML verification for stable coin holders; proof of registration for regulated broker dealing with specific crypto asset classes)
-* an Appchain (or DAO or Network), where fully-regulated tokens can be exchanged among addresses presenting verifiable privacy-protecting proofs
+* an Appchain (i.e. DAO, Network), where fully-regulated tokens can be exchanged among addresses presenting verifiable privacy-protecting proofs
 * A smart contract wallet architecture, providing social recovery, transaction relayer
 * A mobile identity wallet, controlling the smart contract wallet and holding credentials.
 * A set of Trusted Issuers, selected by the DAp/Appchain on the base of the policies and procedure adopted, with the capacity to issue verifiable credentials for legal and regulatory compliance
@@ -138,7 +140,7 @@ Before committing the new state, the trusted crypto asset contract shall query t
 In this scenario, the business logic for the validation is mainly n charge of the vc-verifier contractl leaving to the trusted crypto asset issuer a minimum impact in terms of validation.
 
 #### Transaction Execution strategies
-assuming we have a sender and a receiver, the validation strategy of a transfer of TCA from sender to receiver may be implemented in at least two different way:
+Assuming we have a sender and a receiver, the validation strategy of a transfer of TCA from sender to receiver may be implemented in at least two different way:
 - validation of the sender: in this case, only the sender is required to provide a verifiable prooof at time of transfer, and no validation is applier to the receiver. The receiver won't' be able to spend their token unless their provide a verifiable proof.
 - validation of both sender and receiver: in this case, in order to validate both the subjects, the transaction is split in two sub transactions:
   - sender execute allowance in favour of receiver, up to a specific amount
