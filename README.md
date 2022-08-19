@@ -146,7 +146,7 @@ Assuming we have a sender and a receiver, the validation strategy of a transfer 
 This document stems from the convergence of a number of elements:
 
 - our vision with respect to the growing emergence of public and decentralised networks
-- the need to guarantee an adequate level of user experience and protection for the mass adoption of these technologies
-- the inevitable action of the regulators of such technologies to protect users
+- the need to assure infrastructural user protection and user experience ahead of mass adoption
+- the anticipation of a regulatory framework coherent with the full potential of the new technology
 
-At the moment, we can only speculate on the trajectory that regulation will take with respect to public and decentralised networks, hypotheses from which this proposal was born, and which will be gradually updated to take account of forthcoming regulatory changes.
+At the moment, we can only speculate upon the trajectory that regulation will take with respect to public and decentralised networks. Our hypotheses from which this proposal was born will be gradually updated to take in account the forthcoming regulatory changes.
