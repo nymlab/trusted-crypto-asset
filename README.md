@@ -1,4 +1,4 @@
-# Trusted Crypto Asset
+# Trusted Crypto Asset and Application
 
 A trust framework powering regulated crypto assets\
 By: [Belsy Yuen](mailto:belsy@nymlab.it), [Elena Chachkarova](mailto:elena@nymlab.it), [Egidio Casati](mailto:egidio.casati@nymlab.it) for [NYMLAB srl](https://www.nymlab.it)
